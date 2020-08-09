@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
-const PORT = 80;//process.env.PORT || 5001;
+
 
 http.createServer(function (request, response) {
     console.log('request ', request.url);
@@ -42,5 +42,5 @@ http.createServer(function (request, response) {
         }
     });
 
-}).listen(PORT);
-console.log('Server running at'+PORT );
+}).listen(process.env.PORT || 5000);
+console.log("Listening on port 5000");
