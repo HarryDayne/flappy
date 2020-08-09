@@ -10,10 +10,7 @@ http.createServer(function (request, response) {
     if (filePath == 'front/') {
         filePath = 'front/index.html';
     }
-    else if(filePath=="front/favicon.ico"){
-        console.log("Asked for favicon");
-        filePath="front/index.html"
-    }
+    
 
     var extname = String(path.extname(filePath)).toLowerCase();
     var mimeTypes = {
@@ -21,6 +18,7 @@ http.createServer(function (request, response) {
         '.js': 'text/javascript',
         '.css': 'text/css',
         '.json': 'application/json',
+        '.ico':'image/x-icon'
        };
 
     var contentType = mimeTypes[extname] || 'application/octet-stream';
