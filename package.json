@@ -1,0 +1,19 @@
+{
+  "name": "flappy",
+  "version": "1.0.0",
+  "description": "Simple game inspired ny flappy bird",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryDayne/flappy.git"
+  },
+  "author": "Harikaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarryDayne/flappy/issues"
+  },
+  "homepage": "https://github.com/HarryDayne/flappy#readme"
+}
